@@ -17,5 +17,5 @@
         wp_get_theme()->get('Version') 
         );
     }
-    // define( 'DISALLOW_FILE_EDIT', true );
+    define( 'DISALLOW_FILE_EDIT', true );
 ?>
