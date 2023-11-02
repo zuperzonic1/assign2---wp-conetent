@@ -1,2 +1,2 @@
 # wp-content
-## asn for CMS - Durham college
+## wordpress asn for CMS - Durham college
