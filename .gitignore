@@ -1,0 +1,23 @@
+# OS generated files
+.DS_store
+.DS_store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+
+# Debug Files
+*.log
+*.sql
+
+# Wordpress Standard Files/Folders
+uploads
+upgrade
+
+# Wordpress Plugin Files/Folders
+plugins/wordpress-importer
+
+#SRC Files/Folders
+node_modules
