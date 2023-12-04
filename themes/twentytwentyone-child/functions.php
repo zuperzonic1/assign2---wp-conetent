@@ -16,6 +16,13 @@
         array( 'twenty-twenty-one-style' ), 
         wp_get_theme()->get('Version') 
         );
+        
+        wp_enqueue_style( 'index-style', 
+        get_stylesheet_uri() . 'assets/css/index.css',
+        array(  ), 
+        wp_get_theme()->get('1.0') 
+        );
+        
     }
     define( 'DISALLOW_FILE_EDIT', true );
 ?>
