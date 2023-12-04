@@ -22,29 +22,32 @@
 
 	<!-- custom query -->
 	<?php 
-	$post_args = array(
-		'post_type'      => array('post'),
-        'posts_per_page' => 3,
-        'orderby'        => 'date',
-        'order'          => 'DESC',
-        'post_status'    => 'publish'
-	);
 
-	$post_query = new WP_Query($post_args);
+	if ( is_page_template( 'templates/contact-us.php') || is_page_template( 'templates/frontpage.php' )) {
+		$post_args = array(
+			'post_type'      => array('post'),
+			'posts_per_page' => 3,
+			'orderby'        => 'date',
+			'order'          => 'DESC',
+			'post_status'    => 'publish'
+		);
 
-	if ($post_query -> have_posts()) {
-		while ($post_query -> have_posts()) {
-			$post_query -> the_post();
-			?>
-			<div class="post">
-				<h2><?php the_title(); ?></h2>
-				<p><?php the_excerpt(); ?></p>
-				
-				<br>
-			</div>
-			<?php
+		$post_query = new WP_Query($post_args);
+
+		if ($post_query -> have_posts()) {
+			while ($post_query -> have_posts()) {
+				$post_query -> the_post();
+				?>
+				<div class="post">
+					<h2><?php the_title(); ?></h2>
+					<p><?php the_excerpt(); ?></p>
+
+					<br>
+				</div>
+				<?php
+			}
+			wp_reset_postdata();
 		}
-		wp_reset_postdata();
 	}
 	?>
 
