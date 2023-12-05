@@ -39,12 +39,16 @@
 				$post_query -> the_post();
 				?>
 				<div class="post-footer">
+					<div class="post-section1">
 					<?php 
-					the_post_thumbnail('thumbnail');
+ 					the_post_thumbnail('thumbnail', array('class' => 'post-thumbnail'));					
 					?>
-					<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+					</div>
+					<div class="post-section2">
+					<h2><a class="post-title" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 					<p><?php the_excerpt(); ?></p>
 					<br>
+					</div>
 				</div>
 				<?php
 			}

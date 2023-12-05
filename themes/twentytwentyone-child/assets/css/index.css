@@ -17,5 +17,41 @@ div#page.site{
     border-radius: 10px;
     margin: 100px;
     padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-gap: 20px;
 }
     
+
+
+.post-section1{
+
+}
+
+.post-title{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+img.wp-image-64{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+img.wp-image-81{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+img.wp-image-78{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+h4.wp-block-heading{
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
