@@ -2,5 +2,20 @@
 
 
 div#page.site{
-    background-color: #f36f6f;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 10px;
+    margin: 100px;
+    padding: 20px;
 }
+
+.post-footer{
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 10px;
+    margin: 100px;
+    padding: 20px;
+}
+    

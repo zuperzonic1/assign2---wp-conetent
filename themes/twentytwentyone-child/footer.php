@@ -38,7 +38,7 @@
 			while ($post_query -> have_posts()) {
 				$post_query -> the_post();
 				?>
-				<div class="post">
+				<div class="post-footer">
 					<?php 
 					the_post_thumbnail('thumbnail');
 					?>
