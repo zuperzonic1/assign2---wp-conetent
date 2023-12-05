@@ -6,8 +6,6 @@
 
  get_header();
 
- echo '<h1>Frontpage template</h1>';
-
 /* Start the Loop */
 while ( have_posts() ) :
 	the_post();

@@ -6,8 +6,6 @@
 
  get_header();
 
- echo '<h1>Contact Us template</h1>';
-
 /* Start the Loop */
 while ( have_posts() ) :
 	the_post();
